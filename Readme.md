@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вячеслав Новосёлов](https://up.htmlacademy.ru/adaptive/19/user/1219485).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Макаров](https://up.htmlacademy.ru/adaptive/19/user/429879).
 
 ---
 
