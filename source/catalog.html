@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="" width="" height="" alt="Логотип интернет-магазина Мишка">
+      </a>
+      <nav class="page-nav">
+        <button class="page-nav__toggle" type="button">Открыть меню</button>
+        <div class="page-nav__wrapper">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="page-nav__item">
+            <form class="page-nav__search" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <label for="search"><span>Поиск</span></label>
+            </form>
+          </li>
+          <li class="page-nav__item">
+            <span>Корзина: <a href="#">пока пуста</a></span>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="catalog">
+      <h1 class="catalog__name">Каталог товаров</h1>
+
+      <section class="catalog__products">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__item-link" >
+              <img class="catalog__item-img" src="" width="" height="" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
+              <p class="catalog__item-desc">Рост 30 см, вес 200 г</p>
+              <p class="catalog__item-price">1 200 руб.</p>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__item-link" >
+              <img class="catalog__item-img" src="" width="" height="" alt="Корзинка для белья">
+              <h3 class="catalog__item-name">Корзинка для белья</h3>
+              <p class="catalog__item-desc">Диаметр 15 см, высота 10 см</p>
+              <p class="catalog__item-price">690 руб.</p>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__item-link" >
+              <img class="catalog__item-img" src="" width="" height="" alt="Большая корзинка для игрушек">
+              <h3 class="catalog__item-name">Большая корзинка для игрушек</h3>
+              <p class="catalog__item-desc">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog__item-price">1 500 руб.</p>
+            </a>
+          </li>
+        </ul>
+
+
+
+    <footer class="page-footer">
+      <ul class="page-footer__list">
+        <li class="page-footer__item"><a href="">Instagram</a></li>
+        <li class="page-footer__item"><a href="">Facebook</a></li>
+        <li class="page-footer__item"><a href="">Twitter</a></li>
+      </ul>
+      <a class="page-footer__developer" href="">Разработано</a>
+    </footer>
+
+    <section class="popup-add">
+        <h2 class="popup-add__header">Добавить в корзину</h2>
+        <form class="popup-add__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="popup-add__legend">Выберите размер:</legend>
+            <ul class="popup-add__list">
+              <li class="popup-add__item">
+                <input class="popup-add__input" type="radio" id="s-size" name="s-size">
+                <label class="popup-add__label" for="s-size">S</label>
+              </li>
+              <li class="popup-add__item">
+                <input class="popup-add__input" type="radio" id="m-size" name="m-size">
+                <label class="popup-add__label" for="m-size">M</label>
+              </li>
+              <li class="popup-add__item">
+                <input class="popup-add__input" type="radio" id="l-size" name="l-size">
+                <label class="popup-add__label" for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="popup-add__btn" type="submit">Добавить</button>
+        </form>
+      </section>
+  </body>
+</html>
