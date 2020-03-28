@@ -12,33 +12,31 @@
       </a>
       <nav class="page-nav">
         <button class="page-nav__toggle" type="button">Открыть меню</button>
-        <div class="page-nav__wrapper">
         <ul class="page-nav__list">
           <li class="page-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="page-nav__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-nav__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="page-nav__item-link" href="#">Вязание на заказ</a>
           </li>
           <li class="page-nav__item">
             <form class="page-nav__search" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <label for="search"><span>Поиск</span></label>
+              <input class="page-nav__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <label class="page-nav__label" for="search">Поиск</label>
               <button class="visually-hidden" type="submit">Найти</button>
             </form>
           </li>
           <li class="page-nav__item">
-            <span>Корзина: <a href="#">пока пуста</a></span>
+            <a class="page-nav__cart">Корзина: пока пуста</a>
           </li>
         </ul>
-        </div>
       </nav>
     </header>
 
     <main>
 
     </main>
-      
+
     <footer class="page-footer">
       <ul class="page-footer__list">
         <li class="page-footer__item"><a href="">Instagram</a></li>
@@ -47,6 +45,5 @@
       </ul>
       <a class="page-footer__developer" href="">Разработано</a>
     </footer>
-
   </body>
 </html>

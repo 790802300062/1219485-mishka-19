@@ -12,67 +12,65 @@
       </a>
       <nav class="page-nav">
         <button class="page-nav__toggle" type="button">Открыть меню</button>
-        <div class="page-nav__wrapper">
         <ul class="page-nav__list">
           <li class="page-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="page-nav__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-nav__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="page-nav__item-link" href="#">Вязание на заказ</a>
           </li>
           <li class="page-nav__item">
             <form class="page-nav__search" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <label for="search"><span>Поиск</span></label>
+              <input class="page-nav__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <label class="page-nav__label" for="search">Поиск</label>
               <button class="visually-hidden" type="submit">Найти</button>
             </form>
           </li>
           <li class="page-nav__item">
-            <span>Корзина: <a href="#">пока пуста</a></span>
+            <a class="page-nav__cart">Корзина: пока пуста</a>
           </li>
         </ul>
-        </div>
       </nav>
     </header>
 
     <main>
       <h1 class="visually-hidden">Интернет магазин вязаных товаров Мишка</h1>
 
-      <section class="page-catalog">
-        <h2 class="page-catalog__slogan">Милые штуки ручной работы для дома</h2>
-        <ul class="page-catalog__list">
-          <li class="page-catalog__item">
-            <a class="page-catalog__link" href="#">Предметы интерьера</a>
+      <section class="category">
+        <h2 class="category__title">Милые штуки ручной работы для дома</h2>
+        <ul class="category__list">
+          <li class="category__item">
+            <a class="category__link" href="#">Предметы интерьера</a>
           </li>
-          <li class="page-catalog__item">
-            <a class="page-catalog__link" href="#">Детские игрушки</a>
+          <li class="category__item">
+            <a class="category__link" href="#">Детские игрушки</a>
           </li>
         </ul>
       </section>
-        
-      <article class="page-promo">
-        <h2 class="page-promo__name">Вязаные корзинки</h2>
-        <span class="page-promo__hit">Товар недели</span>
-        <p class="page-promo__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерахю</p>
-        <table class="page-promo__list">
+
+      <article class="promo">
+        <h2 class="promo__title">Вязаные корзинки</h2>
+        <span class="promo__hit">Товар недели</span>
+        <p class="promo__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="promo__table">
           <tr>
-            <th class="page-promo__feature">Цвет:</th>
-            <th class="page-promo__feature">Диаметр:</th>
-            <th class="page-promo__feature">Высота:</th>
+            <th class="promo__feature">Цвет:</th>
+            <th class="promo__feature">Диаметр:</th>
+            <th class="promo__feature">Высота:</th>
           </tr>
           <tr>
-            <td class="page-promo__value">&laquo;Тиффани&raquo;/серый</td>
-            <td class="page-promo__value">25 см</td>
-            <td class="page-promo__value">15 см</td>
+            <td class="promo__value">&laquo;Тиффани&raquo;/серый</td>
+            <td class="promo__value">25 см</td>
+            <td class="promo__value">15 см</td>
           </tr>
         </table>
-        <img class="page-promo__img" src="" width="" height="" alt="Вязаные корзинки">
-        <span class="page-promo__price">Цена: 990 руб.</span>
-        <a class="page-promo__button" href="#">Заказать</a>
+        <img class="promo__img" src="" width="" height="" alt="Вязаные корзинки">
+        <p class="promo__price">Цена: 990 руб.</p>
+        <a class="promo__button" href="#">Заказать</a>
       </article>
 
       <section class="about-us">
-        <h2 class="about-us__header">Коротко о нас:</h2>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">Экологически чистые материалы</li>
           <li class="about-us__item">Скандинавский стиль по российской цене</li>
@@ -83,7 +81,7 @@
         </ul>
       </section>
     </main>
-      
+
     <footer class="page-footer">
       <ul class="page-footer__list">
         <li class="page-footer__item"><a href="">Instagram</a></li>
@@ -94,21 +92,21 @@
     </footer>
 
     <section class="popup-add">
-      <h2 class="popup-add__header">Добавить в корзину</h2>
+      <h2 class="popup-add__title">Добавить в корзину</h2>
       <form class="popup-add__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend class="popup-add__legend">Выберите размер:</legend>
           <ul class="popup-add__list">
             <li class="popup-add__item">
-              <input class="popup-add__input" type="radio" id="s-size" name="s-size">
+              <input class="popup-add__input" type="radio" id="s-size" name="s-size" value="S">
               <label class="popup-add__label" for="s-size">S</label>
             </li>
             <li class="popup-add__item">
-              <input class="popup-add__input" type="radio" id="m-size" name="m-size">
+              <input class="popup-add__input" type="radio" id="m-size" name="m-size" value="M">
               <label class="popup-add__label" for="m-size">M</label>
             </li>
             <li class="popup-add__item">
-              <input class="popup-add__input" type="radio" id="l-size" name="l-size">
+              <input class="popup-add__input" type="radio" id="l-size" name="l-size" value="L">
               <label class="popup-add__label" for="l-size">L</label>
             </li>
           </ul>
