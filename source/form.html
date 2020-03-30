@@ -34,11 +34,11 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Форма обратной связи</h1>
       <section class="form">
-        <h1 class="visually-hidden">Форма обратной связи</h1>
         <h2 class="form__title">Вязание на заказ</h2>
         <p class="form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form__filter">
+        <form class="form__filter" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="form__fieldset">
             <legend class="form__legend">Тип</legend>
@@ -110,16 +110,16 @@
                 <input class="form__input-text" type="tel" id="phone" name="phone" placeholder="+7 XXX XX XX*" required>
               </li>
               <li class="form__item">
-                <label class="form__legend" for="e-mail">E-mail</label>
-                <input class="form__input-text" type="email" id="e-mail" name="e-mail" placeholder="Ваш Email*" required>
+                <label class="form__legend" for="email">E-mail</label>
+                <input class="form__input-text" type="email" id="email" name="email" placeholder="Ваш Email*" required>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Доп</legend>
-            <textarea class="form__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+          <p class="form__fieldset">
+            <label class="form__legend" for="message">Доп</label>
+            <textarea class="form__textarea" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
           <p>*Поля обязательны для заполнения</p>
 
           <button class="btn" type="submit">Отправить заказ</button>
