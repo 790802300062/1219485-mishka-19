@@ -1,0 +1,289 @@
+.category {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+
+  margin: 0 auto;
+
+  background-color: #f9f9f9;
+
+  @media @tablet-width {
+    min-width: 768px;
+
+    background-color: #fbfbfb;
+  }
+
+  @media @desktop-width {
+    min-width: 1150px;
+
+    margin: 0 auto;
+
+    background-color: #fbfbfb;
+  }
+}
+
+.category__header {
+  padding-top: 86px;
+  padding-bottom: 123px;
+
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: 575px 373px;
+}
+
+.category__title {
+  width: 244px;
+  margin: 0 auto;
+
+  .font-bold();
+  font-size: 27px;;
+  line-height: 1.11;
+  text-align: center;
+
+  @media @tablet-width {
+    width: 494px;
+
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  @media @desktop-width {
+    width: 604px;
+
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}
+
+.category__list {
+  .list-reset();
+}
+
+.category__item {
+  a {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 9%;
+
+    .font-bold();
+    font-size: 19px;
+    line-height: 1.26;
+
+    color: @white;
+    transition: background-color 0.4s ease, color 0.1s ease, padding 0.4s ease, margin 0.4s ease;
+
+    &:hover {
+      padding-bottom: 35px;
+      margin-top: -5px;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  span {
+    display: block;
+    width: 130px;
+  }
+
+  &--interior {
+    position: relative;
+
+    a {
+      background-color: @aqua;
+
+      &:hover {
+        background-color: #59d5bc;
+      }
+    }
+  }
+
+  &--toys {
+    position: relative;
+
+    a {
+      background-color: #56c3b2;
+
+      &:hover {
+        background-color: #46c1ae;
+      }
+    }
+  }
+}
+
+.category__item:hover .category__svg--interior {
+  top: 18px;
+
+  opacity: 0.7;
+}
+
+.category__item:active .category__svg--interior {
+  top: 18px;
+
+  opacity: 0.3;
+}
+
+.category__item:hover .category__svg--toys {
+  top: 16px;
+
+  opacity: 0.7;
+}
+
+.category__item:active .category__svg--toys {
+  top: 16px;
+
+  opacity: 0.3;
+}
+
+.category__svg--interior {
+  position: absolute;
+  top: 23px;
+  right: 11.3%;
+
+  width: 40px;
+  height: 62.5px;
+
+  fill: @green;
+  opacity: 0.5;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.category__svg--toys {
+  position: absolute;
+  top: 21px;
+  right: 8.5%;
+
+  display: block;
+  width: 60px;
+  height: 59.6px;
+
+  fill: @green;
+  opacity: 0.5;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+@media @tablet-width {
+  .category {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+
+      display: flex;
+      width: 100%;
+      height: 15px;
+      margin-top: -60px;
+
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: -5px top;
+      background-size: auto 23px;
+    }
+  }
+
+  .category__header {
+    padding-top: 151px;
+    padding-bottom: 375px;
+
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-size: 1150px 746px;
+  }
+
+  .category__title {
+    width: 500px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .category__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .category__item {
+    width: 43.2%;
+
+    a {
+      padding-top: 27px;
+      padding-left: 36px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .category__svg--interior {
+    top: 30px;
+    right: 11%;
+  }
+
+  .category__svg--toys {
+    top: 30px;
+    right: 11%;
+  }
+
+  .category__item:hover .category__svg--interior {
+    top: 25px;
+  }
+
+  .category__item:active .category__svg--interior {
+    top: 25px;
+  }
+
+  .category__item:hover .category__svg--toys {
+    top: 25px;
+  }
+
+  .category__item:active .category__svg--toys {
+    top: 25px;
+  }
+}
+
+@media @retina-tablet {
+  .category__header {
+    background-image: url("../../img/hero-desktop@2x.jpg");
+  }
+}
+
+@media @desktop-width {
+  .category {
+    margin-top: -60px;
+
+    &::after {
+      bottom: 0;
+      background-size: auto;
+      background-position: 0 top;
+    }
+  }
+
+  .category__item {
+    width: 45.65%;
+  }
+
+  .category__header {
+    padding-bottom: 361px;
+  }
+
+  .category__title {
+    width: 690px;
+  }
+
+  .category__svg--interior {
+    right: 6.9%;
+  }
+
+  .category__svg--toys {
+    right: 6.7%;
+  }
+}
