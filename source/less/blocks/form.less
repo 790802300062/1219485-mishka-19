@@ -1,0 +1,148 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  min-width: 320px;
+  .p-reset();
+}
+
+.form__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 177px;
+  .p-reset();
+
+  .font-bold();
+  font-size: 27px;
+  line-height: 1.11;
+
+  background-color: @bg-form;
+}
+
+.form__desc {
+  width: 242px;
+  .p-reset();
+  margin-left: 30px;
+  margin-top: 29px;
+
+  .font-regular();
+  font-size: 13px;
+  line-height: 1.85;
+  color: @text-color;
+}
+
+.form__filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 260px;
+  margin-left: 30px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+
+  .p-reset();
+  margin-top: 30px;
+
+  border: none;
+}
+
+.form__legend {
+  .p-reset();
+
+  .font-bold();
+  font-size: 17px;
+  line-height: 0.94;
+  color: @legend-color;
+  text-transform: uppercase;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+
+  .list-reset();
+  margin-top: 38px;
+}
+
+.form__label {
+  margin-bottom: 25px;
+
+  .font-bold();
+  font-size: 17px;
+  line-height: 1.06;
+
+  &--type {
+    display: inline-block;
+
+    width: 155px;
+  }
+
+  &--color {
+    display: inline-block;
+    margin-top: 46px;
+  }
+}
+
+.form__item--user {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label--user {
+  .p-reset();
+  margin-top: 33px;
+}
+
+.form__input-text {
+  width: 250px;
+  height: 50px;
+
+  border: none;
+  border-bottom: 2px solid @title-color;
+
+  &::placeholder {
+    .font-regular();
+    font-size: 17px;
+    line-height: 1.06;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__textarea {
+  width: 250px;
+  height: 142px;
+
+  border: 2px solid @title-color;
+
+  &::placeholder {
+    .font-regular();
+    font-size: 17px;
+    line-height: 1.06;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__remark {
+  .p-reset();
+  margin-top: 18px;
+
+  .font-regular();
+  font-size: 14px;
+  line-height: 1.14;
+  color: @text-color;
+}
+
+.form__btn {
+  width: 260px;
+  height: 52px;
+
+  margin-top: 31px;
+}

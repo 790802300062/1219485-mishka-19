@@ -1,0 +1,92 @@
+.feedback {
+  margin-top: 61px;
+  padding-left: 30px;
+  padding-bottom: 45px;
+  padding-right: 30px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 1px bottom;
+  background-size: auto 6px;
+}
+
+.feedback__title {
+  .p-reset();
+
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.feedback__article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.feedback__blockquote {
+  .p-reset();
+  margin-top: 38px;
+
+  .font-regular();
+  font-size: 15px;
+  line-height: 2;
+  color: @text-color;
+}
+
+.feedback__cite {
+  margin-top: 40px;
+
+  .font-bold();
+  font-size: 17px;
+  line-height: 1.41;
+  font-style: normal;
+}
+
+.feedback__user {
+  margin-top: 5px;
+}
+
+.feedback__list {
+  display: flex;
+  flex-direction: row;
+
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 36px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feedback__btn {
+  width: 260px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+
+.feedback__btn--arrow {
+  width: 130px;
+  height: 52px;
+
+  background-color: transparent;
+  border: 1px solid @border-color;
+}
+
+.feedback__img--arrow {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.feedback__item {
+  width: 130px;
+
+  &:nth-child(2) .feedback__btn {
+    border-left: none;
+  }
+}

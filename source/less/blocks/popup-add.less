@@ -1,0 +1,92 @@
+.popup-add {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+
+  width: 320px;
+  min-height: 336px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  background-color: @bg-color;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.popup-add__title {
+  align-self: center;
+
+  width: 150px;
+  .p-reset();
+  margin-top: 30px;
+
+  .font-bold();
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup-add__form {
+  .p-reset();
+  margin-top: 25px;
+}
+
+.popup-add__fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .p-reset();
+
+  border: none;
+}
+
+.popup-add__legend {
+  .p-reset();
+
+  .font-regular();
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+}
+
+.popup-add__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 260px;
+
+  .list-reset();
+  margin-top: 30px;
+}
+
+.popup-add__input {
+  display: none;
+}
+
+.popup-add__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup-add__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 78px;
+  height: 52px;
+
+  .font-bold();
+  font-size: 17px;
+  line-height: 0.94;
+
+  border: 1px solid;
+  border-color: rgba(68, 68, 68, 0.3);
+
+  cursor: pointer;
+}
