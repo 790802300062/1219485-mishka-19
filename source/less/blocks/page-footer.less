@@ -7,24 +7,26 @@
   min-height: 160px;
   margin-top: 39px;
 
-  background-color: @smokywhite;
+  background-color: @bg-form;
 }
 
 .page-footer__link {
   padding-right: 40px;
-  font-size: 0px;
+  font-size: 0;
+}
 
-  &:hover svg {
+.page-footer__svg {
+  &:hover {
     fill: @socials-hover;
   }
 
-  &:active svg {
+  &:active {
     fill-opacity: 0.3;
   }
 }
 
 .page-footer__link--last {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .page-footer__list {
@@ -46,26 +48,15 @@
 
   margin-top: 56px;
 
-  & span {
-    padding-right: 30px;
-    .font-bold();
-    font-size: 19px;
-    line-height: 0.95;
-  }
-
-  &:active span {
+  &:active .page-footer__developer--span {
     opacity: 0.3;
   }
 
-  & svg {
-    fill: @seafoam-blue;
-  }
-
-  &:hover svg {
+  &:hover .page-footer__developer--logo {
     fill: @socials-hover;
   }
 
-  &:active svg {
+  &:active .page-footer__developer--logo {
     fill-opacity: 0.3;
   }
 
@@ -82,5 +73,14 @@
   }
 }
 
+.page-footer__developer--span {
+  padding-right: 30px;
 
+  .font-bold();
+  font-size: 19px;
+  line-height: 0.95;
+}
 
+.page-footer__developer--logo {
+  fill: @legend-color;
+}

@@ -16,15 +16,13 @@
   background-position: 1px bottom;
   background-size: auto 6px;
 
-  @media @tablet-width {
+  /*@media (min-width: @tablet-width) {
     min-width: 768px;
+  }*/
 
-  }
-
-  @media @desktop-width {
+  /*@media (min-width: @desktop-width) {
     min-width: 1150px;
-
-  }
+  }*/
 }
 
 .promo__header {
@@ -40,22 +38,22 @@
   font-size: 25px;
   line-height: 1.2;
 
-  @media @tablet-width {
+  /*@media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 50px;
-  }
+  }*/
 
-  @media @desktop-width {
+  /*@media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 57px;
-  }
+  }*/
 }
 
 .promo__hit {
   .font-bold();
   font-size: 17px;
   line-height: 1.18;
-  color: @aqua;
+  color: @bg-interior;
   text-transform: uppercase;
 }
 
@@ -65,7 +63,7 @@
 
   font-size: 15px;
 
-  color: @darkgrey;
+  color: @text-color;
 }
 
 .promo__table {
@@ -83,7 +81,7 @@
   font-size: 15px;
   line-height: 1.33;
   text-align: left;
-  color: @darkgrey;
+  color: @text-color;
 
   border-bottom: 1px solid #e2e2e2;
 }
@@ -119,6 +117,3 @@
   margin: 0 auto;
   margin-top: 28px;
 }
-
-
-

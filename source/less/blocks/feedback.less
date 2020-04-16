@@ -30,7 +30,7 @@
   .font-regular();
   font-size: 15px;
   line-height: 2;
-  color: @darkgrey;
+  color: @text-color;
 }
 
 .feedback__cite {
@@ -70,13 +70,15 @@
   height: 52px;
 
   background-color: transparent;
-  border: 1px solid @lightgrey;
+  border: 1px solid @border-color;
+}
 
-  &:hover img {
+.feedback__img--arrow {
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active img {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -88,4 +90,3 @@
     border-left: none;
   }
 }
-
