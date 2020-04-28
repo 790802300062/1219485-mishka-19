@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="body__index">
+  <body class="body">
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
       <symbol id="icon-cart" viewBox="264.205 370.961 20.294 18.849"><path d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></symbol>
       <symbol id="icon-fb" viewBox="56.519 49.996 14.962 27.718"><path d="M68.181 55.188c1.026.029 1.993 0 2.681-.3.391-.818.556-1.854.619-2.989-.19-.015-.062-.337-.207-.399-.029-.202-.278-.195-.309-.398-.277-.165-.457-.422-.723-.598-.727-.162-1.44-.335-2.164-.499-.849.044-1.895-.103-2.58.1-2.619-.04-3.997 1.12-5.259 2.392-.023.078-.003.197-.105.199-.574 1.587-.125 3.621-.204 5.581.099.436.107.958.204 1.395-.998.296-2.212.387-3.402.499-.317.324-.178 1.089-.206 1.693.085.583.278 1.06.413 1.595.211.193.596.396.825.498.065.029.071.082.103.1.506.268 1.451.008 2.268.1-.136 1.978.256 3.915 0 5.68.007.327.295.382.208.798-.001.963-.067 1.99.208 2.69-.287.455-.497.982-.415 1.794.122.016.114.157.105.299-.075.47.643.175.515.698.162.456-.428.184-.413.498v.896c.53.285 1.462.182 2.268.199.908-.419 2.188-.479 2.785-1.196.459.235.916-.014 1.238-.199-.018-.315.273-.333.205-.698-.004-.328-.173-.496-.103-.896v-2.89c-.206-2.293-.048-4.938-.309-7.176.888-.105 1.917-.075 2.578-.398.357-.451.377-1.23.516-1.895.177-.226.221-.583.206-.996.19-.213.068-.729.104-1.096-.141-.595-.168-1.3-.825-1.395-.884-.235-2.043.595-2.991.299.049-1.134-.293-2.342 0-3.388.746-.176 1.446-.395 2.166-.597zm-3.818 4.783c.117.254.254.486.414.698.079.022.203.003.205.101a10.319 10.319 0 0 0 3.096-.299c0 .998-.271 1.733-.518 2.492-.662.045-1.467.3-1.958.198-.276.165-.372.506-.62.698-.049.441.142.495 0 .797-.201.137-.055.611-.205.796v1.496c.085.281-.146.258-.104.497v3.488c-.085.281.146.258.104.498v2.989c.063.271-.132.791.103.896-.07.364-.412-.021-.824.1-.528.122-.926.369-1.548.4.117-.353.32-.622.311-1.097.049-.381-.365-.312-.516-.498.193-.644.562-1.117.722-1.793.197-.515.714-1.298.31-1.794-.522-.105-.521.293-.826.398-.022.077-.002.196-.103.199-.023.077-.003.196-.103.199.01.12-.151.062 0 0 .022-.078.002-.197.103-.199.023-.077.002-.197.103-.199v-.299c.368-.575.67-1.214.826-1.993.191-.28.283-.656.412-.997.156-.262.34-.869.104-1.195-.517.033-.796.295-.93.697-.32-.189.161-.434.104-.697.138-.231.169-.566.309-.797.202-.413.564-1.304 0-1.596-.438-.023-.612.207-.723.498-.214.191-.43.383-.516.698-.373-.07-.143-.727-.206-1.097-.067-.52.122-.899 0-1.195-.56-.799-2.026-.105-3.197-.299-.108-.307-.222-.984-.104-1.195 1.045-.088 2.479.201 3.197-.199.024-.078.003-.197.104-.199.094-.723-.271-1-.515-1.396.232-.806.04-2.02.104-2.989.233-.141.328-.414.515-.598.112-.955.673-1.476.722-2.492-.273.001-.607-.055-.619.199-.302-.114-.382.479-.515.199-.112-.541.246-.626.309-.997.599-.418 1.212-.82 1.856-1.195 1.741-.244 4.648-.449 6.086.198.051.616-.287.854-.207 1.496h-1.546c-1.092.24-1.987.672-2.991.997-.24.066-.276.331-.516.398-.036.396-.225.646-.311.996-.079 1.441.133 2.599.102 3.988z"/></symbol>
@@ -28,7 +27,7 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link--logo" href="#">
+            <a class="main-nav__logo" href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -45,14 +44,14 @@
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту
               <svg class="main-nav__search-icon" width="18" height="18">
-                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-search"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
             <a class=" main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста
               <svg class="main-nav__cart-icon" width="21" height="19">
-                <use xmlns:xlink="http://www.w3.org/1999/xlinl" xlink:href="#icon-cart"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
             </a>
           </li>
@@ -63,13 +62,13 @@
             <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
           </li>
           <li class="main-nav__item main-nav__item--delivery">
-            <p class="main-nav__delivery--p">Бесплатная доставка по России</p>
+            <p class="main-nav__delivery-p">Бесплатная доставка по России</p>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="page-main">
       <h1 class="visually-hidden">Интернет магазин вязаных товаров Мишка</h1>
 
       <section class="category">
@@ -79,14 +78,14 @@
         <ul class="category__list">
           <li class="category__item category__item--interior">
             <a class="category__link category__link--interior" href="#"><span class="category__span">Предметы интерьера</span>
-              <svg class="category__svg--interior" width="40" height="62.5">
+              <svg class="category__svg-interior" width="40" height="62.5">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
               </svg>
             </a>
           </li>
           <li class="category__item category__item--toys">
             <a class="category__link category__link--toys" href="#"><span class="category__span">Детские игрушки</span>
-              <svg class="category__svg--toys" width="60" height="59.6">
+              <svg class="category__svg-toys" width="60" height="59.6">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use>
               </svg>
             </a>
@@ -126,31 +125,32 @@
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--ecology">Экологически чистые&nbspматериалы</li>
-          <li class="about-us__item about-us__item--style">Скандинавский&nbspстиль по&nbspроссийской цене</li>
-          <li class="about-us__item about-us__item--likes">Увеличивает&nbspлайки на&nbspфотографиях</li>
-          <li class="about-us__item about-us__item--knitted">Связано вручную&nbspс любовью&nbspи&nbspумилением</li>
-          <li class="about-us__item about-us__item--support">Поддержка&nbspотечественного производителя</li>
-          <li class="about-us__item about-us__item--package">Поставляется&nbspв подарочной&nbspупаковке</li>
+          <li class="about-us__item about-us__item--ecology">Экологически чистые&nbsp;материалы</li>
+          <li class="about-us__item about-us__item--style">Скандинавский&nbsp;стиль по&nbsp;российской цене</li>
+          <li class="about-us__item about-us__item--likes">Увеличивает&nbsp;лайки на&nbsp;фотографиях</li>
+          <li class="about-us__item about-us__item--knitted">Связано вручную&nbsp;с любовью&nbsp;и&nbsp;умилением</li>
+          <li class="about-us__item about-us__item--support">Поддержка&nbsp;отечественного производителя</li>
+          <li class="about-us__item about-us__item--package">Поставляется&nbsp;в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
 
       <section class="feedback">
         <h2 class="feedback__title">Отзывы</h2>
         <article class="feedback__article">
-          <blockquote class="feedback__blockquote">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbspмои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+          <h3 class="visually-hidden">Отзывы покупателей</h3>
+          <blockquote class="feedback__blockquote">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
           <cite class="feedback__cite">Анастасия Красильникова</cite>
           <a class="feedback__user" href="#">@misssssiskras</a>
         </article>
         <ul class="feedback__list">
           <li class="feedback__item">
-            <button class="feedback__btn--arrow" type="button">
-              <img class="feedback__img--arrow" src="img/icon-left-arrow.svg" width="50" height="26" alt="Назад">
+            <button class="feedback__arrow-btn" type="button">
+              <img class="feedback__arrow-img" src="img/icon-left-arrow.svg" width="50" height="26" alt="Назад">
             </button>
           </li>
           <li class="feedback__item">
-            <button class="feedback__btn--arrow" type="button">
-              <img class="feedback__img--arrow" src="img/icon-right-arrow.svg" width="50" height="26" alt="Вперед">
+            <button class="feedback__arrow-btn" type="button">
+              <img class="feedback__arrow-img" src="img/icon-right-arrow.svg" width="50" height="26" alt="Вперед">
             </button>
           </li>
         </ul>
@@ -181,12 +181,12 @@
     <footer class="page-footer">
       <div class="page-footer__container">
         <a class="page-footer__logo" href="#">
-          <img class="page-footer__logo-img" src="img/logo-footer.svg" width="" height="" alt="Интернет магазин вязаных товаров Мишка">
+          <img class="page-footer__logo-img" src="img/logo-footer.svg" width="102" height="34" alt="Интернет магазин вязаных товаров Мишка">
         </a>
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="page-footer__link" href="#">
-              <svg class="page-footer__svg page-footer__link--insta" width="22" height="21">
+              <svg class="page-footer__svg" width="22" height="21">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
               </svg>
               Instagram
@@ -194,14 +194,14 @@
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link" href="#">
-              <svg class="page-footer__svg page-footer__link--fb" width="15" height="28">
+              <svg class="page-footer__svg" width="15" height="28">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
               </svg>
               Facebook
             </a>
           <li class="page-footer__item">
-            <a class="page-footer__link page-footer__link--last" href="#">
-              <svg class="page-footer__svg page-footer__link--twitter" width="23" height="20">
+            <a class="page-footer__link" href="#">
+              <svg class="page-footer__svg" width="23" height="20">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
               Twitter
@@ -209,8 +209,8 @@
           </li>
         </ul>
         <a class="page-footer__developer" href="https://htmlacademy.ru">
-          <span class="page-footer__developer--span">Разработано</span>
-          <svg class="page-footer__developer--logo" width="27" height="34">
+          <span class="page-footer__developer-span">Разработано</span>
+          <svg class="page-footer__developer-logo" width="27" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

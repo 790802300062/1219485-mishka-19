@@ -287,24 +287,6 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &--logo {
-    @media (min-width: @tablet-width) {
-      margin-left: 51px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-left: 0;
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
   &--catalog {
     @media (min-width: @tablet-width) {
       .p-reset();
@@ -401,7 +383,25 @@
   }
 }
 
-.main-nav__delivery--p {
+.main-nav__logo {
+  @media (min-width: @tablet-width) {
+    margin-left: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__delivery-p {
   .p-reset();
   padding-right: 52px;
 

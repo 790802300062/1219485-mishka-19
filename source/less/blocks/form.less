@@ -61,17 +61,6 @@
       background-color: @bg-form;
     }
   }
-
-  &--btn {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: @tablet-width) {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
 
 .form__wrapper {
@@ -244,5 +233,16 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
+  }
+}
+
+.form__fieldset-btn {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
