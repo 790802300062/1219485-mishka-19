@@ -1,13 +1,14 @@
 .promo {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
-  min-width: 320px;
-  max-width: 500px;
+  width: 320px;
+
   margin: 0 auto;
 
-  padding-left: 9.3%;
-  padding-right: 9.3%;
   padding-bottom: 41px;
 
 
@@ -16,67 +17,160 @@
   background-position: 1px bottom;
   background-size: auto 6px;
 
-  /*@media (min-width: @tablet-width) {
-    min-width: 768px;
-  }*/
+  @media (min-width: @tablet-width) {
+    width: 768px;
 
-  /*@media (min-width: @desktop-width) {
-    min-width: 1150px;
-  }*/
+    background-size: auto 15px;
+    background-position: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .promo__header {
-  padding-top: 34px;
-  padding-bottom: 30px;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 668px;
+    margin-top: 43px;
+    margin-left: 52px;
+    margin-right: 52px;
+
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+
+    width: 700px;
+    margin-left: 97px;
+    margin-top: 100px;
+  }
 }
 
 .promo__title {
-  margin: 0;
-  padding-bottom: 3px;
+  width: 320px;
+  .p-reset();
+  margin-left: 30px;
 
   .font-bold();
   font-size: 25px;
   line-height: 1.2;
 
-  /*@media (min-width: @tablet-width) {
-    font-size: 40px;
-    line-height: 50px;
-  }*/
+  @media (min-width: @tablet-width) {
+    width: 430px;
+    margin-left: 15px;
 
-  /*@media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 57px;
-  }*/
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 530px;
+    .p-reset();
+
+    order: 2;
+
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }
 
 .promo__hit {
+  width: 320;
+  padding-left: 29px;
+  margin-top: 8px;
+
   .font-bold();
   font-size: 17px;
   line-height: 1.18;
   color: @bg-interior;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    .p-reset ();
+    padding-right: 28px;
+
+    text-align: center;
+    line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
+    padding-right: 58px;
+
+    order: 1;
+  }
 }
 
 .promo__desc {
-  margin: 0;
-  padding-bottom: 18px;
+  width: 250px;
+  .p-reset();
+  padding-left: 30px;
+  margin-top: 30px;
 
   font-size: 15px;
-
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    width: 283px;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 55px;
+
+    order: 2;
+
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  @media (min-width: @desktop-width) {
+    .p-reset();
+    margin-left: 230px;
+    margin-top: 52px;
+  }
 }
 
 .promo__table {
   width: 260px;
   margin: 0 auto;
+  margin-top: 33px;
+  padding-left: 30px;
 
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 291px;
+    margin: 0;
+    margin-left: 71px;
+    margin-top: 54px;
+
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    .p-reset();
+    margin-left: 230px;
+    margin-top: 66px;
+  }
+}
+
+.promo__tr {
+  height: 40px;
 }
 
 .promo__feature,
 .promo__value {
-  min-height: 40px;
-
   .font-regular();
   font-size: 15px;
   line-height: 1.33;
@@ -95,10 +189,30 @@
 }
 
 .promo__img {
-  align-self: center;
+  display: block;
 
   width: 260px;
+  margin: 0 auto;
   margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: calc(52px + 291px + 44px);
+    top: calc(55px + 42px + 43px);
+
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: calc(100% - 525px - 50px);
+    top: 28px;
+
+    width: 525px;
+    height: 636px;
+
+    z-index: -1;
+  }
 }
 
 .promo__price {
@@ -108,6 +222,24 @@
   .font-bold();
   font-size: 17px;
   line-height: 1.41;
+
+  @media (min-width: @tablet-width) {
+    width: 291px;
+    margin: 0;
+    margin-left: 51px;
+    margin-top: 59px;
+
+    order: 4;
+
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 230px;
+    margin-top: 111px;
+  }
 }
 
 .promo__btn {
@@ -116,4 +248,18 @@
 
   margin: 0 auto;
   margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 292px;
+    margin: 0;
+    margin-left: 51px;
+    margin-top: 34px;
+
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 230px;
+    margin-bottom: 73px;
+  }
 }
