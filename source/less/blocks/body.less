@@ -1,5 +1,25 @@
 .body {
-  @media (min-width: @tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 1px, #ffffff 87px, @border-color 87px, @border-color 88px, @menu-index 88px, @menu-index 129px, @bg-color 129px);
+  margin: 0 auto;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15;
+  color: @title-color;
+
+  &--index {
+    background-image: linear-gradient(to bottom, @bg-color 1px, @bg-color 78px, @border-color 78px, @border-color 80px, @bg-color 80px, @bg-color 100px);
+
+    @media (min-width: @tablet-width) {
+      background-image: linear-gradient(to bottom, #ffffff 1px, #ffffff 88px, @border-color 88px, @border-color 89px, @menu-index-color 89px, @menu-index-color 825px, @bg-color 825px);
+    }
+  }
+
+  &--inner-pages {
+    background-image: linear-gradient(to bottom, @bg-color 1px, @bg-color 78px, @border-color 78px, @border-color 80px, @bg-color 79px, @bg-color 100px);
+
+    @media (min-width: @tablet-width) {
+      background-image: linear-gradient(to bottom, @bg-color 1px, @bg-color 88px, @border-color 88px, @border-color 89px, @form-color 89px, @form-color 135px, @bg-color 135px);
+    }
   }
 }
