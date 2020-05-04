@@ -2,7 +2,6 @@ var map = document.querySelector('.contacts__yandex-map');
 var noImgMap = document.querySelector('.contacts__map');
 
 map.classList.remove('contacts__yandex-map--nojs');
-noImgMap.classList.add('contacts__map--display-none')
 
 if (map) {
   ymaps.ready(init);

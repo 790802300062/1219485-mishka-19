@@ -2,6 +2,8 @@
   width: 320px;
   margin: 0 auto;
 
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     padding-bottom: 82px;
@@ -17,7 +19,6 @@
 }
 
 .about-us__title {
-  width: 320px;
   .p-reset();
   margin: 0 auto;
   margin-top: 34px;
@@ -49,7 +50,6 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  width: 320px;
   .list-reset();
   margin-bottom: 3px;
   padding-left: 30px;
@@ -65,7 +65,6 @@
 
 .about-us__item {
   width: 255px;
-  padding-top: 85px;
 
   .font-bold();
   font-size: 17px;
@@ -83,66 +82,126 @@
   }
 
   &--ecology {
+    position: relative;
+    padding-top: 85px;
+
     order: 1;
 
-    background-image: url("/img/icon-feature-flower.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    &::before {
+      content: url("/img/icon-feature-flower.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50%, -50%);
+
+      width: 32px;
+      height: 37px;
+    }
   }
 
   &--style {
-    order: 2;
+    position: relative;
+    padding-top: 85px;
 
-    background-image: url("/img/icon-feature-money.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    order: 2;
 
     @media (min-width: @tablet-width) {
       order: 3;
     }
+
+    &::before {
+      content: url("/img/icon-feature-money.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50% -50%);
+
+      width: 47px;
+      height: 27px;
+    }
   }
 
   &--likes {
-    order: 3;
+    position: relative;
+    padding-top: 85px;
 
-    background-image: url("/img/icon-feature-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    order: 3;
 
     @media (min-width: @tablet-width) {
       order: 5;
     }
+
+    &::before {
+      content: url("/img/icon-feature-heart.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50% -50%);
+
+      width: 34px;
+      height: 27px;
+    }
   }
 
   &--knitted {
-    order: 4;
+    position: relative;
+    padding-top: 85px;
 
-    background-image: url("/img/icon-feature-ball.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    order: 4;
 
     @media (min-width: @tablet-width) {
       order: 2;
     }
+
+    &::before {
+      content: url("/img/icon-feature-ball.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50% -50%);
+
+      width: 35px;
+      height: 34px;
+    }
   }
 
   &--support {
-    order: 5;
+    position: relative;
+    padding-top: 85px;
 
-    background-image: url("/img/icon-feature-rocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    order: 5;
 
     @media (min-width: @tablet-width) {
       order: 4;
     }
+
+    &::before {
+      content: url("/img/icon-feature-rocket.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50% -50%);
+
+      width: 55px;
+      height: 23px;
+    }
   }
 
   &--package {
+    position: relative;
+    padding-top: 85px;
+
     order: 6;
 
-    background-image: url("/img/icon-feature-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 0 25px;
+    &::before {
+      content: url("/img/icon-feature-gift.svg");
+      position: absolute;
+      left: 23px;
+      top: 43px;
+      transform: translate(-50% -50%);
+
+      width: 33px;
+      height: 32px;
+    }
   }
 }

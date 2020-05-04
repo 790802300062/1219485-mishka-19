@@ -84,7 +84,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  width: 256px;
+  width: 100%;
   .list-reset();
   margin-left: 30px;
 
@@ -104,8 +104,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  width: 256px;
 }
 
 .feedback__blockquote {
@@ -164,15 +162,15 @@
 
   @media (min-width: @tablet-width) {
     width: 137px;
-    margin-left: 600px;
+    margin-left: auto;
+    margin-right: 0;
     margin-top: -50px;
 
     order: 3;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 1000px;
-    margin-top: -40px;
+    margin-top: 160px;
   }
 }
 
