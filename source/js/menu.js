@@ -1,19 +1,16 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var siteNav = document.querySelector('.page-header__site-list');
+var userNav = document.querySelector('.page-header__user-list');
+var jsOff = document.querySelector('.page-header__nav');
+var menuToggle = document.querySelector('.page-header__toggle');
 
-navMain.classList.remove('main-nav--nojs');
-navToggle.classList.remove('main-nav__toggle--nojs');
+siteNav.classList.toggle('page-header__site-list--closed');
+userNav.classList.toggle('page-header__user-list--closed');
+jsOff.classList.toggle('page-header__nav--closed');
+jsOff.classList.remove('page-header__nav--nojs');
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-    navToggle.classList.remove('main-nav__toggle--closed');
-    navToggle.classList.add('main-nav__toggle--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    navToggle.classList.add('main-nav__toggle--closed');
-    navToggle.classList.remove('main-nav__toggle--opened');
-  }
+menuToggle.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  siteNav.classList.toggle('page-header__site-list--closed');
+  userNav.classList.toggle('page-header__user-list--closed');
+  jsOff.classList.toggle('page-header__nav--closed');
 });
