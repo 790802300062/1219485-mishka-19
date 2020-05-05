@@ -1,19 +1,22 @@
 .about-us {
   width: 320px;
   margin: 0 auto;
+  padding-left: 30px;
 
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    margin-top: 23px;
+    padding-left: 50px;
     padding-bottom: 82px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
     margin: 0 auto;
-    padding-top: 70px;
-    padding-left: 195px;
+    padding-top: 55px;
+    padding-left: 225px;
     padding-bottom: 82px;
   }
 }
@@ -21,8 +24,7 @@
 .about-us__title {
   .p-reset();
   margin: 0 auto;
-  margin-top: 34px;
-  padding-left: 30px;
+  margin-top: 28px;
 
   .font-bold();
   font-size: 25px;
@@ -30,7 +32,6 @@
   color: @title-color;
 
   @media (min-width: @tablet-width) {
-    width: 350px;
     margin-left: 0;
 
     font-size: 43px;
@@ -38,7 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 500px;
+    .p-reset();
 
     font-size: 53px;
     line-height: 1.08;
@@ -52,20 +53,13 @@
 
   .list-reset();
   margin-bottom: 3px;
-  padding-left: 30px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1000px;
+    margin-top: 20px;
   }
 }
 
 .about-us__item {
-  width: 255px;
-
   .font-bold();
   font-size: 17px;
   line-height: 1.18;
@@ -78,7 +72,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 115px;
+    width: 350px;
   }
 
   &--ecology {
@@ -90,8 +84,8 @@
     &::before {
       content: url("/img/icon-feature-flower.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: 24px;
+      top: 50px;
       transform: translate(-50%, -50%);
 
       width: 32px;
@@ -106,62 +100,79 @@
     order: 2;
 
     @media (min-width: @tablet-width) {
+      padding-top: 110px;
       order: 3;
     }
 
     &::before {
       content: url("/img/icon-feature-money.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: 0;
+      top: 30px;
       transform: translate(-50% -50%);
 
       width: 47px;
       height: 27px;
+
+      @media (min-width: @tablet-width) {
+        top: 58px;
+      }
     }
   }
 
   &--likes {
     position: relative;
-    padding-top: 85px;
+    padding-top: 82px;
 
     order: 3;
 
     @media (min-width: @tablet-width) {
+      padding-top: 110px;
+
       order: 5;
     }
 
     &::before {
       content: url("/img/icon-feature-heart.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: 9px;
+      top: 32px;
       transform: translate(-50% -50%);
 
       width: 34px;
       height: 27px;
+
+      @media (min-width: @tablet-width) {
+        top: 62px;
+      }
     }
   }
 
   &--knitted {
     position: relative;
-    padding-top: 85px;
+    padding-top: 82px;
 
     order: 4;
 
     @media (min-width: @tablet-width) {
+      padding-top: 85px;
+
       order: 2;
     }
 
     &::before {
       content: url("/img/icon-feature-ball.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: 2px;
+      top: 30px;
       transform: translate(-50% -50%);
 
       width: 35px;
       height: 34px;
+
+      @media (min-width: @tablet-width) {
+        top: 35px;
+      }
     }
   }
 
@@ -172,36 +183,50 @@
     order: 5;
 
     @media (min-width: @tablet-width) {
+      padding-top: 110px;
+
       order: 4;
     }
 
     &::before {
       content: url("/img/icon-feature-rocket.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: -5px;
+      top: 33px;
       transform: translate(-50% -50%);
 
       width: 55px;
       height: 23px;
+
+      @media (min-width: @tablet-width) {
+        top: 60px;
+      }
     }
   }
 
   &--package {
     position: relative;
-    padding-top: 85px;
+    padding-top: 80px;
 
     order: 6;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 110px;
+    }
 
     &::before {
       content: url("/img/icon-feature-gift.svg");
       position: absolute;
-      left: 23px;
-      top: 43px;
+      left: 2px;
+      top: 28px;
       transform: translate(-50% -50%);
 
       width: 33px;
       height: 32px;
+
+      @media (min-width: @tablet-width) {
+        top: 60px;
+      }
     }
   }
 }

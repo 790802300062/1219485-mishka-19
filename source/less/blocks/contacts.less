@@ -3,19 +3,20 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
     .p-reset();
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    justify-content: flex-start;
 
     width: 1150px;
+    padding-bottom: 60px;
   }
 }
 
@@ -26,20 +27,26 @@
 
   width: 320px;
   margin: 0 auto;
+  padding-left: 29px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 768px;
+    padding-left: 51px;
+    padding-right: 55px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 500px;
+    width: 550px;
+    margin: 0;
+    padding-left: 224px;
+    padding-right: 0;
   }
 }
 
 .contacts__title {
   .p-reset();
-  margin-top: 44px;
-  margin-left: 29px;
+  margin-top: 35px;
 
   .font-bold();
   font-size: 18px;
@@ -48,32 +55,30 @@
   @media (min-width: @tablet-width) {
     position: relative;
     .p-reset();
-    margin-top: 72px;
+    margin-top: 60px;
 
     font-size: 43px;
     line-height: 1.16;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 224px;
+    margin-top: 140px;
 
     font-size: 53px;
     line-height: 1.08;
   }
-}
 
-.contacts__title::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    left: calc(100% - 99px);
-    top: 0;
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: url("../../img/icon-flag.svg");
+      position: absolute;
+      left: calc(100% - 50px);
+      top: 50%;
+      transform: translateY(-50%);
 
-    width: 47px;
-    height: 81px;
-
-    background-image: url("../../img/icon-flag.svg");
-    background-repeat: no-repeat;
+      width: 47px;
+      height: 81px;
+    }
 
     @media (min-width: @desktop-width) {
       left: -111px;
@@ -85,15 +90,14 @@
 }
 
 .contacts__table {
-  margin-top: 42px;
-  margin-left: 29px;
+  margin-top: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    margin-top: 17px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-top: 64px;
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
   }
 
   & tbody {
@@ -104,15 +108,29 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      width: 680px;
+      width: 660px;
       margin-top: 30px;
     }
 
     @media (min-width: @desktop-width) {
       flex-direction: column;
-      margin-left: 224px;
+
+      width: 300px;
       margin-top: 0;
     }
+  }
+}
+
+.contacts__tr {
+  @media (min-width: @tablet-width) {
+    width: 315px;
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: @tablet-width) {
+      margin-right: 10px;
+    }
+
   }
 }
 
@@ -133,7 +151,7 @@
 }
 
 .contacts__th {
-  width: 78px;
+  width: 72px;
 
   @media (min-width: @tablet-width) {
     width: 78px;
@@ -142,24 +160,34 @@
 
 .contacts__td {
   @media (min-width: @tablet-width) {
-    width: 255px;
+    width: 220px;
   }
 }
 
 .contacts__address {
+  width: 150px;
+
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    width: 225px;
+  }
 }
 
 .contacts__email {
   padding-bottom: 3px;
-  border-bottom: 1px solid #46c1ae;
+
+  color: @text-color;
+
+  border-bottom: 1px solid @socials-color;
 
   &:hover {
-    color: #46c1ae;
+    color: @socials-color;
   }
 
   &:active {
     color: rgba(70, 193, 174, 0.3);
+
     border-bottom: 1px solid rgba(70, 193, 174, 0.1);
   }
 }
@@ -172,19 +200,21 @@
   width: 320px;
   height: 457px;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 457px;
     margin: 0 auto;
-    margin-top: 61px;
+    margin-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 525px;
     height: 457px;
-    margin-top: 50px;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 72px;
   }
 }
 
@@ -238,12 +268,12 @@
   @media (min-width: @tablet-width) {
     width: 230px;
     margin-top: 55px;
-    margin-bottom: 57px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
     margin-left: 225px;
-    margin-top: -60px;
+    margin-top: -50px;
   }
 }

@@ -1,17 +1,16 @@
 .feedback {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   width: 320px;
   margin: 0 auto;
-  margin-top: 61px;
-  padding-bottom: 45px;
-
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 1px bottom;
-  background-size: auto 6px;
+  margin-top: 54px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -21,17 +20,47 @@
     justify-content: space-between;
 
     width: 768px;
-    margin: 0 auto;
+    margin-top: 0;
+    padding-left: 47px;
     padding-right: 52px;
-    padding-bottom: 84px;
-
-    background-size: auto 15px;
+    padding-bottom: 120px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
-    padding-left: 50px;
-    padding-bottom: 90px;
+    margin-top: 5px;
+    padding-left: 224px;
+    padding-right: 50px;
+    padding-bottom: 170px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-size: auto 6px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 15px;
+
+      background-size: auto 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: auto 23px;
+    }
   }
 }
 
@@ -45,9 +74,13 @@
     width: 350px;
     height: 457px;
 
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     z-index: -1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -57,13 +90,12 @@
 
 .feedback__title {
   .p-reset();
-  margin-left: 29px;
 
   font-size: 25px;
   line-height: 1.2;
 
   @media (min-width: @tablet-width) {
-    margin-top: 86px;
+    margin-top: 75px;
     order: 1;
 
     font-size: 43px;
@@ -71,8 +103,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 172px;
-    margin-top: 80px;
+    margin-top: 73px;
 
     font-size: 53px;
     line-height: 1.08;
@@ -86,7 +117,6 @@
 
   width: 100%;
   .list-reset();
-  margin-left: 30px;
 
   @media (min-width: @tablet-width) {
     width: 642px;
@@ -96,7 +126,6 @@
 
   @media (min-width: @desktop-width) {
     width: 772px;
-    margin-left: 172px;
   }
 }
 
@@ -108,7 +137,7 @@
 
 .feedback__blockquote {
   .p-reset();
-  margin-top: 38px;
+  margin-top: 23px;
 
   .font-regular();
   font-size: 15px;
@@ -117,7 +146,7 @@
 
   @media (min-width: @tablet-width) {
     width: 645px;
-    margin-top: 65px;
+    margin-top: 42px;
 
     font-size: 17px;
     line-height: 1.76;
@@ -125,11 +154,12 @@
 
   @media (min-width: @desktop-width) {
     width: 772px;
+    margin-top: 47px;
   }
 }
 
 .feedback__cite {
-  margin-top: 40px;
+  margin-top: 28px;
 
   .font-bold();
   font-size: 17px;
@@ -137,15 +167,25 @@
   font-style: normal;
 
   @media (min-width: @tablet-width) {
-    margin-top: 68px;
+    margin-top: 63px;
 
     font-size: 18px;
     line-height: 1.33;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+  }
 }
 
 .feedback__user {
-  margin-top: 5px;
+  margin-top: 8px;
+
+  color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+  }
 }
 
 .feedback__arrow-list {
@@ -163,26 +203,22 @@
   @media (min-width: @tablet-width) {
     width: 137px;
     margin-left: auto;
-    margin-right: 0;
-    margin-top: -50px;
+    margin-right: 19px;
+    margin-top: -35px;
 
     order: 3;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 160px;
   }
 }
 
 .feedback__btn {
   width: 260px;
-  height: 52px;
+  height: 48px;
   margin: 0 auto;
   margin-top: 38px;
 
   @media (min-width: @tablet-width) {
-    width: 175px;
-    margin-top: 86px;
+    width: 172px;
+    margin-top: 80px;
     margin-right: 0;
 
     order: 2;
@@ -217,9 +253,10 @@
   &--left {
     background-image: url("/img/icon-left-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 40px 13px;
+    background-position: 35px 13px;
 
     @media (min-width: @tablet-width) {
+      width: 87px;
       background-position: 0 0;
     }
   }
@@ -227,7 +264,7 @@
   &--right {
     background-image: url("/img/icon-right-arrow.svg");
     background-repeat: no-repeat;
-    background-position: 40px 13px;
+    background-position: 35px 13px;
     border-left: none;
 
     @media (min-width: @tablet-width) {
