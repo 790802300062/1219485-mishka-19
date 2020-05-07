@@ -8,12 +8,14 @@
 
   width: 260px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 35px;
+  margin-bottom: 59px;
 
   border: 1px solid @border-color;
 
   @media (min-width: @tablet-width) {
     width: 668px;
+    margin-top: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,6 +24,7 @@
     width: 1050px;
     margin: 0 auto;
     margin-top: 57px;
+    margin-bottom: 105px;
   }
 
   &:hover .production__container {
@@ -37,7 +40,7 @@
   position: absolute;
   align-self: center;
 
-  top: 29px;
+  top: 25px;
   left: 34px;
 
   width: 130px;
@@ -55,6 +58,8 @@
 
     width: 245px;
     height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
 
     font-size: 20px;
     line-height: 1.2;
@@ -64,6 +69,7 @@
 
   @media (min-width: @desktop-width) {
     width: 150px;
+    margin-left: 45px;
     padding-left: 0;
     padding-top: 53px;
   }
@@ -72,14 +78,21 @@
     content: url("/img/icon-video.svg");
     position: absolute;
     left: 0;
-    top: 0;
+    top: 15px;
     transform: translateY(-50%);
 
     width: 32px;
     height: 22px;
 
     @media (min-width: @tablet-width) {
+      left: -10px;
+      top: -5px;
       transform: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+      top: 0;
     }
   }
 }
@@ -90,7 +103,7 @@
   margin-top: 96px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin-top: 0;
   }
 }
 
@@ -146,7 +159,7 @@
 .production__desc {
   width: 185px;
   .p-reset();
-  margin-top: 34px;
+  margin-top: 28px;
   margin-left: 34px;
 
   .font-regular();
@@ -155,7 +168,7 @@
 
   @media (min-width: @tablet-width) {
     width: 582px;
-    margin-top: 41px;
+    margin-top: 50px;
     margin-left: 40px;
 
     font-size: 15px;
@@ -165,26 +178,29 @@
   @media (min-width: @desktop-width) {
     width: 223px;
 
-    margin-top: 100px;
+    margin-top: 78px;
+    margin-left: 80px;
   }
 }
 
 .production__btn {
   width: 192px;
-  height: 52px;
+  height: 48px;
   margin: 0 auto;
-  margin-top: 29px;
-  margin-bottom: 33px;
+  margin-top: 27px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     width: 584px;
     margin-bottom: 46px;
+    margin-top: 35px;
   }
 
   @media (min-width: @desktop-width) {
     width: 230px;
 
-    margin-top: 51px;
+    margin-top: 45px;
     margin-bottom: 0;
+    margin-left: 84px;
   }
 }

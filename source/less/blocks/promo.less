@@ -6,36 +6,53 @@
   flex-wrap: wrap;
 
   width: 320px;
+  box-sizing: border-box;
 
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 41px;
-
-
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 1px bottom;
-  background-size: auto 6px;
-  box-sizing: border-box;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 60px;
-
-    background-size: auto 15px;
-    background-position: cover;
+    padding-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
     padding-left: 97px;
     padding-bottom: 25px;
+  }
 
-    background-position: center bottom;
-    background-size: 1050px 23px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-size: auto 6px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 15px;
+
+      background-size: auto 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: auto 23px;
+    }
   }
 }
 
@@ -56,7 +73,7 @@
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
 
-    margin-top: 117px;
+    margin-top: 120px;
   }
 }
 
@@ -118,7 +135,7 @@
 .promo__desc {
   width: 250px;
   .p-reset();
-  margin-top: 23px;
+  margin-top: 20px;
 
   font-size: 15px;
   line-height: 1.6;
@@ -138,7 +155,7 @@
   @media (min-width: @desktop-width) {
     .p-reset();
     margin-left: 130px;
-    margin-top: 52px;
+    margin-top: 50px;
   }
 }
 
@@ -151,7 +168,7 @@
   @media (min-width: @tablet-width) {
     width: 291px;
     margin: 0;
-    margin-top: 43px;
+    margin-top: 40px;
 
     order: 3;
   }
@@ -159,7 +176,7 @@
   @media (min-width: @desktop-width) {
     .p-reset();
     margin-left: 130px;
-    margin-top: 52px;
+    margin-top: 50px;
   }
 }
 
@@ -251,9 +268,10 @@
   margin-top: 26px;
 
   @media (min-width: @tablet-width) {
-    width: 292px;
+    width: 288px;
+    height: 44px;
     margin: 0;
-    margin-top: 34px;
+    margin-top: 30px;
 
     order: 5;
   }
