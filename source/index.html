@@ -7,10 +7,14 @@
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.legacy.js"></script>
     <script>svg4everybody();</script>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
 
   <body class="body body--index">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="page-header__nav page-header__nav--nojs">
         <div class="page-header__logo-wrapper">
@@ -35,14 +39,14 @@
           <li class="page-header__user-item page-header__user-item--search">
             <a class="page-header__user-link page-header__user-link--search" href="#">Поиск по сайту
               <svg class="page-header__search-icon" width="18" height="18">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-search"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
             </a>
           </li>
           <li class="page-header__user-item page-header__user-item--cart">
             <a class="page-header__user-link page-header__user-link--cart" href="#">Корзина: пока пуста
               <svg class="page-header__cart-icon" width="21" height="19">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
             </a>
           </li>
@@ -70,14 +74,14 @@
           <li class="category__item category__item--interior">
             <a class="category__link category__link--interior" href="#"><span class="category__span">Предметы интерьера</span>
               <svg class="category__svg-interior" width="40" height="62.5">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-interior"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
               </svg>
             </a>
           </li>
           <li class="category__item category__item--toys">
             <a class="category__link category__link--toys" href="#"><span class="category__span">Детские игрушки</span>
               <svg class="category__svg-toys" width="60" height="59.6">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-toy"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use>
               </svg>
             </a>
           </li>
@@ -110,7 +114,7 @@
           <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="promo__img" src="/img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          <img class="promo__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
         </picture>
         <p class="promo__price">Цена: 990 руб.</p>
         <a class="btn promo__btn" href="#">Заказать</a>
@@ -187,20 +191,20 @@
           <li class="page-footer__item">
             <a class="page-footer__link" href="#"><span class="visually-hidden">Instagram</span>
               <svg class="page-footer__svg" width="22" height="21">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link" href="#"><span class="visually-hidden">Facebook</span>
               <svg class="page-footer__svg" width="15" height="28">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
               </svg>
             </a>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--last" href="#"><span class="visually-hidden">Twitter</span>
               <svg class="page-footer__svg" width="23" height="20">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -208,7 +212,7 @@
         <a class="page-footer__developer" href="https://htmlacademy.ru">
           <span class="page-footer__developer-span">Разработано</span>
           <svg class="page-footer__developer-logo" width="27" height="34">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -240,8 +244,6 @@
       </div>
     </section>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f9ea63cc-e94e-473b-b668-7a726b5f22ca"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
