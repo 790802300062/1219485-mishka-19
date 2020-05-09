@@ -9,13 +9,13 @@
   margin: 0 auto;
 
   background-color: @menu-index-color;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -17px;
   background-size: 575px 373px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center -17px;
     background-size: 575px 373px;
@@ -24,13 +24,13 @@
   @media (min-width: @tablet-width) {
     background-color: @category-bg-color;
 
-    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px auto;
     background-position: center -45px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/hero-tablet@2x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-position: center -45px;
       background-size: 1150px auto;
@@ -46,7 +46,7 @@
       height: 24px;
       margin-top: -60px;
 
-      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: center top;
       background-size: 770px 24px;
@@ -54,13 +54,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px auto;
     background-position: center -45px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg");
       background-repeat: no-repeat;
       background-size: 1150px auto;
       background-position: center -50px;
@@ -115,8 +115,8 @@
 }
 
 .category__list {
+  align-self: center;
   .list-reset();
-  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
