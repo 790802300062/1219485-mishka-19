@@ -347,6 +347,10 @@
     line-height: 0.95;
   }
 
+  &:focus {
+    outline: 2px solid @focus-color;
+  }
+
   &--radio {
     padding-left: 62px;
 
@@ -495,8 +499,16 @@
   display: block;
 }
 
+.form__input-radio:focus + .form__label--radio::before {
+  outline: 2px solid @focus-color;
+}
+
 .form__input-checkbox:checked + .form__label--checkbox::after {
   display: block;
+}
+
+.form__input-checkbox:focus + .form__label--checkbox::before {
+  outline: 2px solid @focus-color;
 }
 
 .form__input-text {
@@ -572,11 +584,12 @@
   }
 
   &:focus {
-    border: 2px solid @focus-color;
+    box-shadow: inset 0 -2px 0 0 @interior-color;
     outline: none;
   }
 
-  &:hover + .form__icon {
+  &:hover + .form__icon,
+  &:focus + .form__icon {
     fill: @interior-color;
     opacity: 1;
   }
