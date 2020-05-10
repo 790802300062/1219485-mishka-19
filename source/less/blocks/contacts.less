@@ -102,25 +102,25 @@
   @media (min-width: @desktop-width) {
     margin-top: 45px;
   }
+}
 
-  & tbody {
-    border-collapse: collapse;
+.contacts__tbody {
+  border-collapse: collapse;
 
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-      width: 660px;
-      margin-top: 30px;
-    }
+    width: 660px;
+    margin-top: 30px;
+  }
 
-    @media (min-width: @desktop-width) {
-      flex-direction: column;
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
 
-      width: 300px;
-      margin-top: 0;
-    }
+    width: 300px;
+    margin-top: 0;
   }
 }
 
@@ -192,7 +192,7 @@
 
 .contacts__map-wrapper {
   position: relative;
-  display: block;
+
   overflow: hidden;
 
   width: 320px;
@@ -216,12 +216,13 @@
   }
 }
 
-.contacts__map,
-.contacts__yandex-map {
+.contacts__map {
   display: block;
 
   width: 322px;
   height: 457px;
+
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -234,9 +235,10 @@
   }
 }
 
-.contacts__map::after {
+.contacts__map-wrapper::after {
   content: "";
   position: absolute;
+  display: block;
   left: 43%;
   top: 30%;
 
@@ -245,27 +247,43 @@
 
   background-image: url("../img/map-pin.svg");
 
-  z-index: 5;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     left: 47%;
   }
 }
 
-.contacts__yandex-map--nojs {
-  display: none;
+.contacts__yandex-map {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 322px;
+  height: 457px;
+
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 457px;
+  }
 }
 
 .contacts__btn {
   width: 258px;
-  height: 48px;
+  min-height: 48px;
 
   margin: 0 auto;
   margin-top: 39px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
-    height: 48px;
     margin-top: 55px;
     margin-bottom: 7px;
   }

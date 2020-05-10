@@ -342,6 +342,8 @@
   font-size: 17px;
   line-height: 1.06;
 
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     font-size: 19px;
     line-height: 0.95;
@@ -361,9 +363,10 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 0;
       left: 0;
-      transform: translateY(-50%);
+
+      transform: translateY(-25%);
 
       width: 36px;
       height: 36px;
@@ -372,8 +375,6 @@
       border-radius: 50%;
 
       @media (min-width: @tablet-width) {
-        top: 10px;
-
         width: 48px;
         height: 48px;
       }
@@ -383,9 +384,8 @@
       content: "";
       display: none;
       position: absolute;
-      top: 11px;
+      top: 2px;
       left: 12px;
-      transform: translateY(-50%);
 
       width: 16px;
       height: 16px;
@@ -394,7 +394,8 @@
       border-radius: 50%;
 
       @media (min-width: @tablet-width) {
-        left: 15px;
+        top: 2px;
+        left: 16px;
 
         width: 21px;
         height: 21px;
@@ -666,6 +667,7 @@
   color: @text-color;
 
   border: 2px solid @text-color;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 501px;
@@ -729,9 +731,11 @@
 
 .form__btn {
   width: 260px;
-  height: 52px;
+  min-height: 52px;
   margin-top: 30px;
   margin-bottom: 15px;
+
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 230px;

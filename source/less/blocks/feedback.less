@@ -76,6 +76,7 @@
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-color: #f3f3f3;
     z-index: -1;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -212,7 +213,7 @@
 
 .feedback__btn {
   width: 257px;
-  height: 48px;
+  min-height: 48px;
   margin: 0 auto;
   margin-top: 38px;
 
@@ -235,6 +236,8 @@
 
   background-color: transparent;
   border: 1px solid @border-color;
+
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 66px;

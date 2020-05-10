@@ -68,8 +68,6 @@ window.addEventListener('keydown', closeModalEsc);
 
 //карта
 
-map.classList.remove('contacts__yandex-map--nojs');
-
 if (map) {
   ymaps.ready(init);
   function init() {
