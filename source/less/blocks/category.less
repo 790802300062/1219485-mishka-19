@@ -121,6 +121,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -176,26 +177,20 @@
 
   &--interior {
     position: relative;
+    background-color: @interior-color;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
     position: relative;
-  }
-}
+    background-color: @toys-color;
 
-.category__link--interior {
-  background-color: @interior-color;
-
-  &:hover {
-    background-color: #59d5bc;
-  }
-}
-
-.category__link--toys {
-  background-color: @toys-color;
-
-  &:hover {
-    background-color: #46c1ae;
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
 }
 
